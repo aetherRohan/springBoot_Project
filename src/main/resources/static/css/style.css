@@ -1,0 +1,298 @@
+        .bg-primary {
+           background-color: rgba(0, 0, 0, 0.95) !important;
+           color: white !important;
+        }
+
+        body {
+          background-color: #e2e2e2 !important;
+          color: white;
+        }
+
+        .banner {
+         width: 100%;
+         height: 93vh;
+         background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../image/banner.png);
+         color: white;
+        }
+
+        .signup {
+         width: 100%;
+         height: 100vh;
+         background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../image/signup.png);
+         color: white;
+        }
+
+        .signup2 {
+        display:flex;
+         width: 100%;
+         height: 100vh; /* Changed from 100% to 100vh */
+         align-items: center;
+         justify-content: center;
+         background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url(../image/signup.png);
+       /* Added for better background display */
+         background-position: center;
+           background-attachment: fixed;/* Added for better background display */
+         color: blue;
+        }
+
+       .signup3 {
+         background: rgba(255, 255, 255, 0.05); /* very light transparent white */
+         backdrop-filter: blur(10px);          /* adds blur behind the card */
+         color: black;
+         border-radius: 20px;
+       }
+
+
+
+        .btn.bg-primary {
+          background-color: rgba(0, 0, 0, 0.95) !important;
+          color: white !important;
+          border: none !important;
+          transition: all 0.4s ease;
+          position: relative;
+          top: 10px;
+        }
+
+        .btn.bg-primary:hover {
+          background-color: lightgrey !important;
+          color: black !important;
+          transform: scale(1.2);
+          border: none !important;
+        }
+
+        .btn-outline-success {
+          border-radius: 50px;
+        }
+
+        .form-control {
+          border-radius: 25px;
+        }
+
+        .my-card {
+          padding: 35px;
+          background: rgba(211, 211, 211, 0.4);
+          color: rgba(0, 0, 0, 1) !important;
+        }
+
+        .login {
+         width: 100%;
+         height: 100vh;
+         background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../image/signup.png);
+         color: white;
+        }
+
+        .dash {
+          width: 100%;
+          height: 100vh;
+          background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../image/dash.png);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-attachment: fixed;
+          color: white;
+        }
+
+        .sidebar {
+          width: 18%;
+          height: 100%;
+          background-color: black !important;
+          position: absolute;
+          padding-top: 25px;
+          color: white !important;
+          z-index: 1000;
+        }
+
+        .content {
+          margin-left: 20%;
+        }
+
+        .sidebar-overlay {
+          display: none;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0,0,0,0.5);
+          z-index: 999;
+        }
+
+        @media only screen and (max-width: 600px) {
+          .sidebar {
+            display: none;
+            width: 60% !important;
+            height: 100%;
+            background-color: black !important;
+            position: fixed;
+            padding-top: 45px;
+            color: white !important;
+            z-index: 1000;
+          }
+
+          .content {
+            margin-left: 0% !important;
+          }
+
+          body.sidebar-active .content {
+            pointer-events: none;
+          }
+        }
+
+        .sidebar a {
+          display: block;
+          width: 100%;
+          padding: 10px 25px;
+          text-decoration: none;
+          color: white !important;
+        }
+
+        .sidebar a:hover {
+          background-color: rgba(0, 0, 0, 0.4) !important;
+        }
+
+        .sidebar .cross {
+          top: 0;
+          position: absolute;
+          right: 35px;
+          cursor: pointer;
+          font-size: 30px;
+          background-color: transparent;
+          color: white;
+        }
+
+        .cross:hover {
+          color: grey !important;
+          transform: scale(1.2);
+        }
+
+        .cross {
+          position: absolute;
+          top: 60px;
+          left: 25px;
+          cursor: pointer;
+          font-size: 25px;
+          z-index: 1100;
+          background: none !important;
+          border: none !important;
+        }
+
+       .add-card {
+         padding: 20px;
+         min-height: auto;
+         max-width: 600px;         /* restricts max width */
+         background: rgba(211, 211, 211, 0.9);
+         color: rgba(0, 0, 0, 1) !important;
+         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+         border: none !important;
+         margin: 0 auto;           /* centers the card */
+         border-radius: 15px;
+       }
+
+
+        .col-md-6 {
+          max-width: 700px !important;
+        }
+
+        .myBG {
+          background-color: transparent;
+        }
+
+        .offset-sidebar {
+            margin-left: 18%;
+        }
+
+        @media (max-width: 768px) {
+            .offset-sidebar {
+                margin-left: 0;
+            }
+        }
+
+        .profile_picture{
+        width:45px;
+        height:45px;
+        border-radius:50%;
+        }
+
+        .contact_picture{
+        border-radius:50%;
+         width:45px;
+         height:45px;
+        }
+
+        /* Small fixes for button alignment without changing your styles */
+        .button-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .right-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        /* Smaller text and adjusted contact info box */
+        .px-3.text-left {
+          font-size: 0.9rem;
+          max-width: 600px;
+          margin: 0 auto;
+        }
+
+        .px-3.text-left div[style*="background"] {
+          background: rgba(255, 255, 255, 0.6) !important;
+          color: #000 !important;
+          padding: 8px 14px !important;
+          border-radius: 10px !important;
+        }
+        .text-button {
+          background: none;
+          border: none;
+          padding: 0;
+          margin: 0;
+          color: black;
+          text-decoration: none;
+          cursor: pointer;
+          font: inherit;
+        }
+
+        .text-button:hover {
+          text-decoration: underline;
+        }
+       .search-box {
+         display: flex;
+         justify-content: flex-end;
+         width: 100%;
+         position: relative;
+         margin-bottom: 20px;
+         color:black;
+       }
+
+       .search-box-inner {
+         width: 500px; /* Increased size */
+         position: relative;
+       }
+
+       .search-box-inner input {
+         width: 100%;
+         padding: 10px;
+         border: 1px solid #ccc;
+         border-radius: 8px;
+       }
+
+       .search-result {
+         position: absolute;
+         top: 100%;
+         left: 0;
+         width: 100%;
+         border-radius:10px;
+         background: rgba(211, 211, 211, 0.9);\
+         color:black !important;
+         padding: 10px;
+
+         z-index: 100;
+         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+         display:none;
+       }
+
+
